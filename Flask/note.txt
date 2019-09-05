@@ -1,0 +1,20 @@
+1.virtualenv安装
+$ sudo pip3 install virtualenv
+sudo apt-get install python-virtualenv	//ubantu
+2.
+$ cd /home/shiyanlou/Code
+$ mkdir myproject && cd myproject
+$ virtualenv -p /usr/bin/python3 venv
+3.
+$ . venv/bin/activate	//Mac OSX Linux
+$ venv\scripts\activate	//Windows
+4.安装flask库
+$ pip3 install flask==1.0.2
+5.运行
+$ export FLASK_APP=hello.py
+$ flask run [--host=0.0.0.0]
+6.调试模式
+$ export FLASK_APP=hello.py
+$ export FLASK_ENV=development
+$ export FLASK_DEBUG=1
+$ flask run
